@@ -1,5 +1,0 @@
-<!--service.wxml !-->
-<view class="center">
-    <view class="service">服务条款如下 180条呢 你看的完吗你？</view>
-    <image class="center-cell-top-image" src='../../images/meng.gif'></image>
-</view>
