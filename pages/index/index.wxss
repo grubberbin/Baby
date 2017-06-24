@@ -1,0 +1,127 @@
+/**index.wxss**/
+page{
+  height :100%;
+}
+.content 
+{
+  height: 100%;
+  background-color: #e8e8e8;
+  text-align: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.center{
+  background: white;
+  width: 100%;
+}
+
+.center-cell-top{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  height: 60px;
+  border-bottom: 1px #e8e8e8 solid;
+  justify-content: space-between;
+}
+
+.center-cell-top-image{
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-top: 5%;
+}
+
+.center-cell-top-input{
+  margin-left: 10px;
+  height: 44px;
+  margin-top: 8px;
+  text-align: 44px;
+
+}
+
+.center-cell-input{
+  text-align: left;
+  margin-left: 10px;
+  height: 60px;
+}
+
+.center-cell{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.defaultBtn{
+  margin-top: 20px;
+  background-color: deepskyblue;
+  color: white;
+  width: 80%;
+}
+
+.disableBtn
+{
+  margin-top: 20px;
+  background-color: #c2c2c2;
+  color: white;
+  width: 80%;
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  height: 20px;
+  text-align: 20px;
+  margin-top: 5%;
+}
+
+.success-view1{
+  margin-left: 5px;
+  color: #c2c2c2;
+}
+
+.success-view2{
+  margin-left: 5px;
+  color: deepskyblue;
+}
+
+.resgist{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 90%;
+  margin-top: 5%;
+}
+
+.no-login{
+  position: fixed;
+  bottom: 5%;
+  left:5%;
+  font-size: 16px;
+  color: #4aaecd;
+}
+
+.no-user{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  font-size: 16px;
+  color: #4aaecd;
+}
+
+.historyList{
+  background: #e8e8e8;
+  height: 60px;
+}
+
+.user-list{
+  height: 40px;
+  border-bottom: 1px #c2c2c2 solid;
+  line-height: 25px;
+}

@@ -1,0 +1,112 @@
+/**register.wxss**/
+page{
+  height: 100%;
+}
+.content 
+{
+  background-color: #e8e8e8;
+  height: 100%;
+  text-align: center;
+}
+
+.center{
+  background: white;
+  width: 100%;
+}
+
+.center-cell-number{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  height: 60px;
+  border-bottom: 1px #e8e8e8 solid;
+  justify-content: space-between;
+}
+
+.center-cell-number-input{
+  margin-left: 10px;
+  height: 44px;
+  margin-top: 8px;
+  text-align: 44px;
+
+}
+
+.center-cell-name{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  height: 60px;
+  border-bottom: 1px #e8e8e8 solid;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  text-align: left;
+  border-bottom: 1px #e8e8e8 solid;
+}
+
+.center-cell-verifySmsCode-input{
+  margin-left: 10px;
+  height: 44px;
+  margin-top: 8px;
+  text-align: 44px;
+
+}
+.verify_gain{
+  height: 44px;
+  margin-top: 18px;
+  margin-right: 15px;
+}
+
+.timeTip{
+ text-align:right ;
+  height: 44px;
+  margin-top: 8px;
+  margin-right: 15px;
+}
+.center-cell-password1{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  height: 60px;
+  border-bottom: 1px #e8e8e8 solid;
+  justify-content: space-between;
+}
+
+.center-cell-password2{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.center-cell-name-input{
+  margin-left: 10px;
+  height: 44px;
+  margin-top: 8px;
+  text-align: 44px;
+
+}
+
+.center-cell-password1-input{
+  margin-left: 10px;
+  height: 44px;
+  margin-top: 8px;
+  text-align: 44px;
+}
+
+.center-cell-password2-input{
+  margin-left: 10px;
+  height: 44px;
+  margin-top: 8px;
+  text-align: 44px;
+}
+
+.defaultBtn{
+  margin-top: 20px;
+  background-color: deepskyblue;
+  color: white;
+  width: 80%;
+}

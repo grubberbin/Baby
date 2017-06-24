@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="content">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image> 
+   
+    <view class='center'>
+        <view class ='center-cell-top'>
+         <input class ="center-cell-top-input" placeholder="请输入用户名" bindinput = "userName"value = "{{userName}}" />
+     <!--
+        <image class="center-cell-top-image" src='../../images/downward.png' bindtap="clickImage">
+        </image>     !-->
+        </view>
+
+        <scroll-view scroll-y ="true" height='120px' class="historyList" hidden="{{userListHidden}}">
+            <view    wx:key="{{userNames}}" class="user-list" bindtap="clickCell" id ="{{index}}">{{item}}</view>
+        </scroll-view>
+
+        <view class='center-cell'>
+        <input class="center-cell-input" placeholder="请输入密码" password  bindinput ="password" value= "{{password}}"/>
+        </view>
+    </view>
+    <button wx:if="{{iconType == 'success'}}" class= "defaultBtn" bindtap="login"> 登录 </button>
+        <button wx:else class= "disableBtn" disabled ="true" bindtap="login"> 登录 </button>
+
+    <view class="bottom">
+        <icon type="{{iconType}}" color="deepskyblue" bindtap="clickIcon"></icon>
+        <view class="success-view1">我已阅读并同意</view>
+        <view class="success-view2" bindtap="serviceTip">服务条款</view>
+    </view>
+
+    <view class="resgist">
+        <view class="no-login" bindtap ="clickFindPassword">忘记密码？</view>
+        <view class="no-user" bindtap = "clickRegister">新用户注册</view>
+    </view>
+
+</view>

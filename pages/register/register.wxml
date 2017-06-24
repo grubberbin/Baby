@@ -1,0 +1,28 @@
+
+<!--register.wxml-->
+<view class="content">
+  <view class="center">
+    <view wx:if="{{mode =='modify'}}" class='center-cell-name'>
+      <input class="center-cell-name-input" placeholder="请输入旧密码" bindinput="oldpawd" />
+    </view>
+    <view wx:else class='center-cell-name'>
+      <input class="center-cell-name-input" placeholder="请输入手机号" bindinput="userName" />
+    </view>
+    <view  wx:if="{{mode !='modify'}}" class='item'>
+      <input class="center-cell-verifySmsCode-input" type="number" placeholder="请输入验证码" bindinput="verifySmsCode" />
+      <view class='verify_gain' bindtap="gainMsg">
+        <text wx:if="{{time==60}}" class="timeTip">获取验证码</text>
+        <text wx:else class="timeTip">{{time}}s后重发</text>
+      </view>
+    </view>
+    <view class='center-cell-password1'>
+      <input class="center-cell-password1-input" placeholder="请输入密码" password bindinput="password1" />
+    </view>
+    <view class='center-cell-password2'>
+      <input class="center-cell-password2-input" placeholder="请再次输入密码" password bindinput="password2" />
+    </view>
+  </view>
+  <button wx:if="{{mode == 'register'}}" class="defaultBtn" bindtap="register"> 注册 </button>
+  <button wx:elif="{{mode == 'reset'}}" class="defaultBtn" bindtap="register"> 密码重置 </button>
+  <button wx:elif="{{mode =='modify'}}" class="defaultBtn" bindtap="register"> 确认修改 </button>
+</view>

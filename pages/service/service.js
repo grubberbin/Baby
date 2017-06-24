@@ -1,0 +1,7 @@
+// service.js
+
+Page({
+  data:{
+  },
+ 
+})

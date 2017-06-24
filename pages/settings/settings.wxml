@@ -1,0 +1,126 @@
+
+<!--pages/settings/settings.wxml-->
+<view class="content">
+  <view wx:if="{{pageId==1}}" class="member">
+    <view class='item_friendNumber'>
+    <text class="title_text">亲情号码</text>
+    <block wx:for-items="{{member}}" wx:key="{{index}}">
+    <view class='item'>
+      <label>{{item.id}}</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+    </view>
+    </block>
+    </view>
+    <view class='item_friendNumber'>
+    <text class="title_text">白名单</text>
+    <view class='item'>
+      <label>白名单1：</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+      <label>白名单2：</label>
+      <input type="text" placeholder="" bindinput="setNum2" />
+      <label>白名单3：</label>
+      <input type="text" placeholder="" bindinput="setNum3" />
+      <label>白名单4：</label>
+      <input type="text" placeholder="" bindinput="setNum4" />
+      <label>白名单5：</label>
+      <input type="text" placeholder="" bindinput="setNum5" />
+    </view>
+    </view>
+    <button class="defautBtn" bindtap="saveNum">保存</button>
+  </view>
+  <view wx:if="{{pageId==2}}" class="member">
+  <text class="title_text">围栏设置</text>
+  <switch checked bindchange="switch1Change" />
+    <text class="title_text">围栏1</text>
+    <view class='item'>
+      <label>经 度：</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+      <label>纬 度：</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+    </view>
+    <text class="title_text">围栏2</text>
+    <view class='item'>
+      <label>经 度：</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+      <label>纬 度：</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+    </view>
+    <text class="title_text">围栏3</text>
+    <view class='item'>
+      <label>经 度：</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+      <label>纬 度：</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+    </view>
+    <text class="title_text">围栏4</text>
+    <view class='item'>
+      <label>经 度：</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+      <label>纬 度：</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+    </view>
+    <button class="defautBtn" bindtap="saveNum">保存</button>
+  </view>
+  <view wx:if="{{pageId==3}}" class="member">
+    <text class="title_text">闹钟设置</text>
+    <switch checked bindchange="switch1Change" />
+    <view class='item'>
+      <label>闹钟1</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+      <label>闹钟2</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+      <label>闹钟3</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+    </view>
+    <button class="defautBtn" bindtap="saveNum">保存</button>
+  </view>
+  <view wx:if="{{pageId==4}}" class="member">
+    <text class="title_text">静音设置</text>
+    <switch checked bindchange="switch1Change" />
+    <view class='item'>
+      <label>起始时间</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+      <label>终止时间</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+    </view>
+    <button class="defautBtn" bindtap="saveNum">保存</button>
+  </view>
+  <view wx:if="{{pageId==5}}" class="member">
+    <text class="title_text">定位设置</text>
+    <switch checked bindchange="switch1Change" />
+    <view class='item'>
+      <label>起始时间</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+      <label>终止时间</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+    </view>
+    <button class="defautBtn" bindtap="saveNum">保存</button>
+  </view>
+  <view wx:if="{{pageId==6}}" class="member">
+    <text class="title_text">休眠设置</text>
+    <switch checked bindchange="switch1Change" />
+    <view class='item'>
+      <label>起始时间</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+      <label>终止时间</label>
+      <input type="text" placeholder="" bindinput="setNum1" />
+    </view>
+    <button class="defautBtn" bindtap="saveNum">保存</button>
+  </view>
+  <view wx:if="{{pageId == 8}}" class="member">
+    <text class="title_text">宝贝信息</text>
+    <button class="defautBtn" bindtap="saveNum">保存</button>
+  </view>
+  <view wx:if="{{pageId == 9}}" class="member">
+    <text class="title_text">省电模式</text>
+    <switch checked bindchange="switch1Change" />
+    <button class="defautBtn" bindtap="saveNum">保存</button>
+  </view>
+  <view wx:if="{{pageId == 11}}" class="member">
+  <text class="title_text">意见反馈</text>
+    <form bindsubmit="bindFormSubmit">
+      <textarea placeholder="请输入..." name="textarea" />
+      <button form-type="submit"> 提交 </button>
+    </form>
+  </view>
+</view>

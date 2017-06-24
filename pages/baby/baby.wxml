@@ -1,0 +1,19 @@
+
+<!--baby.wxml !-->
+<view class="mapView">
+  <map id="myMap" longitude="{{point.longitude}}" latitude="{{point.latitude}}" markers="{{markers}}" scale="{{mapScale}}" show-location bindmarkertap="markertap" controls="{{controls}}" bindcontroltap="controltap" style="width:{{mapHeight}}; height: {{mapWidth}};top: {{mapTop}}">
+  </map>
+  <view class="content">
+    <view  wx:if="{{address == ''}}" class="locationTxt" >暂无位置信息</view>
+    <view  wx:else  class="locationTxt"> {{address}} </view>
+
+    <view class="batInfo">
+      <image wx:if="{{batinfo == 0}}" class="batIcon" src="../../images/offline.png"></image>
+      <image wx:elif="{{batinfo==1}}" class="batIcon" src="../../images/one.png"></image>
+      <image wx:elif="{{batinfo==2}}" class="batIcon" src="../../images/two.png"></image>
+      <image wx:elif="{{batinfo==3}}" class="batIcon" src="../../images/three.png"></image>
+      <image wx:elif="{{batinfo==4}}" class="batIcon" src="../../images/four.png"></image>
+      <image wx:elif="{{batinfo==5}}" class="batIcon" src="../../images/five.png"></image>
+    </view>
+  </view>
+</view>
