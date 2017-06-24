@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/register/register",
+    "pages/service/service",
+    "pages/baby/baby",
+    "pages/settings/settings",
+    "pages/options/options",
+    "pages/babyinfo/babyinfo"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "deepskyblue",
+    "navigationBarTitleText": "宝贝呢",
+    "navigationBarTextStyle":"black"
+  }
+}
