@@ -1,7 +1,0 @@
-/**service.wxss**/
-.center
-{
-  background-color: #e8e8e8;
-  height: 750px;
-  text-align: center;
-}
