@@ -1,7 +1,0 @@
-// service.js
-
-Page({
-  data:{
-  },
- 
-})
